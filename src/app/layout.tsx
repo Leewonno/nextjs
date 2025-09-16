@@ -19,19 +19,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  analytics,
+  // analytics,
 }: Readonly<{
   children: React.ReactNode;
-  analytics: React.ReactNode;
+  // analytics: React.ReactNode;
 }>) {
-  if (true) {
-    throw new Error("테스트용 강제 에러");
-  }
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
-        {analytics}
+        {/* {analytics} */}
       </body>
     </html>
   );
